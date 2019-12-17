@@ -13,7 +13,7 @@ This is an implementation of my existing project of `makaut-result-parser`. This
 ## Features
 
  - [x] Downloads a zip file containing all the PDFs of the students in the range of roll number provided.
- - [] Individual result (coming soon)
+ - [ ] Individual result (coming soon)
 
 ----
 

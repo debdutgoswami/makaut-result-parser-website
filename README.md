@@ -24,3 +24,9 @@ This is an implementation of my existing project of `makaut-result-parser`. This
 * html and css
 
 ----
+
+# Note
+
+I am very new to web developement. Infact this is my first web application and I neither know `html` nor `css` nor `flask` very well. So, if anyone of you have any suggestion then feel free to drop me an email or connect with me on LinkedIn. I would be more than happy to receive any suggestions or constructive criticism.
+
+----

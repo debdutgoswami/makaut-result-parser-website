@@ -1,0 +1,78 @@
+html {
+    overflow-x: hidden; 
+}
+body {
+    line-height: 1.7;
+    color: #666666;
+    font-weight: 400;
+    font-size: 1rem; 
+}
+form{
+    text-align: center;
+}
+input[type=text]{
+    text-align: center;
+    background-color: white;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+input[type=text]:focus{
+    border: 3px solid #555555;
+}
+input[type=number]{
+    text-align: center;
+    background-color: white;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+input[type=number]:focus{
+    border: 3px solid #555555;
+}
+input[type=submit]{
+    text-align: center;
+    width: 10%;
+    background-color: #0f81ec;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+select[type=number]{
+    text-align: center;
+    background-color: white;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+select[type=number]:focus{
+    border: 3px solid #555555;
+}
+h1{
+    text-align: center;
+    font-family: 'Rubik',Lato,Lucida Grande,'Lucida Sans Unicode',Tahoma,Sans-Serif;;
+}
+h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    border-radius: 8px;
+    align-self: auto;
+}

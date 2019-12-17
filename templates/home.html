@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <h1>Welcome to MAKAUT result parser</h1>
+    </head>
+    <body>
+        <form method="POST" action="/">
+            <div class="form-group1">
+                <input type="number" name="year" placeholder="year of admission" required>
+                <select type="number" name="sem" placeholder="semester" required>
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="5">5th Semester</option>
+                    <option value="6">6th Semester</option>
+                    <option value="7">7th Semester</option>
+                    <option value="8">8th Semester</option>
+                </select>
+                <input type="text" name="dept" placeholder="department (without white space)" required>
+            </div>
+            
+            <div class="form-group2">   
+                <input type="text" name="start" placeholder="starting roll number" required>
+                <input type="text" name="end" placeholder="ending roll number" required>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -6,7 +6,13 @@ This is an implementation of my existing project of `makaut-result-parser`. This
 
 ## How to setup
 
+1. Install `python` on your system. Visit [python's official page](https://www.python.org/downloads) to download it.
 
+2. Clone the repo.
+
+3. Then install the requirements using `pip install -r requirements.txt`. (It is preffered to use a virtual environment for this)
+
+4. Then simply run the flask application using `python app.py` and then go the generated local IP address to use the site.
 
 ----
 

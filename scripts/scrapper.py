@@ -22,28 +22,15 @@ def get_result(data: dict):
     variables.data['_token'] = csrf_token
     variables.data['SEMCODE'] = variables.semcode[data['sem']]
 
-    for rollno in range(data['start'], data['end']+1):
-        variables.data['ROLLNO'] = str(rollno)
-        with s.post(variables.url_pdf, data=variables.data, headers=variables.headers) as r:
-            with open("{}\{}.pdf".format(_dir,rollno), 'wb') as f:
-                f.write(r.content)
-
-    create_zip(dir_name) # function call for creating the zip
+    _dir = os.path.join('scripts\{}'.format(dir_name))
+    with ZipFile('download.zip', 'w') as z:
+        for rollno in range(data['start'], data['end']+1):
+            variables.data['ROLLNO'] = str(rollno)
+            with s.post(variables.url_pdf, data=variables.data, headers=variables.headers) as r:
+                with open("{}\{}.pdf".format(_dir,rollno), 'wb') as f:
+                    f.write(r.content)
+                z.write("{}\{}.pdf".format(_dir,rollno), os.path.basename("{}\{}.pdf".format(_dir,rollno)))
 
     _dir = os.path.join(os.path.dirname(__file__), dir_name) # get the parent folder of the temporary files
     shutil.rmtree(_dir) #remove the tempory files
-
-    return '{}.zip'.format(dir_name) #return the final zip name
-
-def create_zip(dir_name):
-    """creates the zip file
-    
-    Arguments:
-        dir_name {str} -- name of the final zip
-    """
-    _dir = os.path.join('scripts\{}'.format(dir_name))
-    with ZipFile('{}.zip'.format(dir_name), 'w') as f:
-        for foldername, _, filenames in os.walk(_dir):
-            for filename in filenames:
-                print(foldername)
-                f.write('scripts\{}\{}'.format(dir_name, filename),os.path.basename('scripts\{}\{}'.format(dir_name, filename)))
+    return 'download.zip' #return the final zip name

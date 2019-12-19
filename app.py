@@ -33,7 +33,7 @@ def home():
             return response
         
         # sends the zip file. as_attachment parameters specify that the original name of the zip will be the 
-        return send_file(filename, as_attachment=True)
+        return send_file(filename)
 
 if __name__ == '__main__':
     app.run()

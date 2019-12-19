@@ -43,9 +43,7 @@ def create_zip(dir_name):
     """
     _dir = os.path.join('scripts\{}'.format(dir_name))
     with ZipFile('{}.zip'.format(dir_name), 'w') as f:
-        print("hi")
         for foldername, _, filenames in os.walk(_dir):
-            print(filenames)
             for filename in filenames:
                 print(foldername)
                 f.write('scripts\{}\{}'.format(dir_name, filename),os.path.basename('scripts\{}\{}'.format(dir_name, filename)))

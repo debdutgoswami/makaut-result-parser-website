@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MAKAUT Result Parser</title>
         <link rel = "icon" href ="{{ url_for('static', filename='images/logo.png') }}" type = "image/x-icon"> 
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <ul class="topnav">
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="howtouse">How to use</a></li>
+            <li><a class="right"  href="about">About</a></li>
+          </ul>
         <h1>Welcome to MAKAUT result parser</h1>
     </head>
     <body>
@@ -20,7 +26,7 @@
                     <option value="7">7th Semester</option>
                     <option value="8">8th Semester</option>
                 </select>
-                <input type="text" name="dept" placeholder="department (without white space)" required>
+                <input type="text" name="dept" placeholder="department" required>
             </div>
             
             <div class="form-group2">   
@@ -30,4 +36,7 @@
             <input class="btn btn-primary" type="submit" value="Submit">
         </form>
     </body>
+    <footer>
+        <p>Copyright &hearts; Debdut Goswami</p>
+    </footer>
 </html>

@@ -45,4 +45,4 @@ def howtouse():
     return render_template('howtouse.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

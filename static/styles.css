@@ -3,7 +3,6 @@ html {
 }
 body {
     margin: 0;
-    width: fit-content;
 }
 form{
     text-align: center;
@@ -122,8 +121,8 @@ ul.topnav li.right {
 }
 
 @media screen and (max-width: 600px) {
-   ul.topnav li.right, 
-   ul.topnav li {
-       float: none;
-    }
-}
+    ul.topnav li.right, 
+    ul.topnav li {
+        float: none;
+     }
+ }

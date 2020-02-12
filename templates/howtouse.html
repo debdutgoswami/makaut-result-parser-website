@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MAKAUT Result Parser</title>
-        <link rel = "icon" href ="{{ url_for('static', filename='images/logo.png') }}" type = "image/x-icon"> 
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-        <ul class="topnav">
-            <li><a href="/">Home</a></li>
-            <li><a class="active" href="howtouse">How to use</a></li>
-            <li><a class="right"  href="about">About</a></li>
-          </ul>
-        <h1>Coming Soon!!</h1>
-    </head>
-    <body>
-        
-    </body>
-    <footer>
-        <p>Copyright &hearts; Debdut Goswami</p>
-    </footer>
-</html>
+{% extends "base.html" %}
+
+{% block navbar %}
+<li class="nav-item">
+    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item active">
+    <a class="nav-link" href="">How to use</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="about">About</a>
+</li>
+{% endblock %}
+{% block heading %}Comming Soon!!{%  endblock %}
